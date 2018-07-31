@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-tabs": "^2.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,7 +16,10 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx}": ["prettier --write", "git add"]
+    "*.{js,jsx}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "devDependencies": {
     "husky": "^0.14.3",
