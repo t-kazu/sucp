@@ -1,0 +1,11 @@
+.react-tabs__tab {
+  background: hsla(215, 50%, 90%, 1);
+  color: hsla(225, 15%, 40%, 0.75);
+}
+
+.react-tabs__tab--selected {
+  background: #fff;
+  border-color: #aaa;
+  color: #3366FF;
+  border-radius: 5px 5px 0 0;
+}
