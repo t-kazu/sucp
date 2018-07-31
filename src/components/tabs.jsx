@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import TopScreen from "../containers/top.jsx";
+import "../css/tabs.css";
 
 class TabComponect extends Component {
   render() {
