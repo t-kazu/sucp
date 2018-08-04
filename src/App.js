@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import TabComponect from "./components/tabs/tabs.jsx";
+
+import Menu from "./components/menu-bar/menu-bar.jsx";
 
 class App extends Component {
   render() {
-    return <TabComponect />;
+    return <Menu />;
   }
 }
 
