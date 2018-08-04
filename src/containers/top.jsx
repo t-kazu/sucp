@@ -1,8 +1,15 @@
 import React, { Component } from "react";
+import MainVisual from "../components/top/main-visual.jsx";
+import Concept from "../components/top/concept.jsx";
 
 class TopScreen extends Component {
   render() {
-    return <h2>トップ</h2>;
+    return (
+      <div>
+        <MainVisual />
+        <Concept />
+      </div>
+    );
   }
 }
 

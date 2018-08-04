@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TabComponect from "./components/tabs.jsx";
+import TabComponect from "./components/tabs/tabs.jsx";
 
 class App extends Component {
   render() {
