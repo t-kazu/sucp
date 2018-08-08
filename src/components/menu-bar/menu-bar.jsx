@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Nav, Navbar, NavItem } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link, Switch } from "react-router-dom";
 
 import TopScreen from "../../containers/top.jsx";
 import IllustScreen from "../..//containers/illust.jsx";
@@ -11,7 +11,7 @@ import ContactScreen from "../../containers/contact.jsx";
 class Menu extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <div>
           <Navbar>
             <Navbar.Header>
@@ -34,12 +34,14 @@ class Menu extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Route exact path="/" component={TopScreen} />
-          <Route path="/illust" component={IllustScreen} />
-          <Route path="/license" component={LicenseScreen} />
-          <Route path="/contact" component={ContactScreen} />
+          <Switch>
+            <Route exact path="/" component={TopScreen} />
+            <Route path="/illust" component={IllustScreen} />
+            <Route path="/license" component={LicenseScreen} />
+            <Route path="/contact" component={ContactScreen} />
+          </Switch>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
