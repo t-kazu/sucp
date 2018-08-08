@@ -1,7 +1,7 @@
 {
   "name": "sucp",
   "version": "0.1.0",
-  "homepage": "https://t-kazu.github.io/sucp",
+  "homepage": "https://t-kazu.github.io/sucp/",
   "private": true,
   "dependencies": {
     "react": "^16.4.1",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env PUBLIC_URL=https://t-kazu.github.io/sucp/ react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
@@ -26,6 +26,7 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "gh-pages": "^1.2.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
