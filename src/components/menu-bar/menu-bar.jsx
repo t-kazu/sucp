@@ -13,7 +13,7 @@ class Menu extends Component {
     return (
       <HashRouter>
         <div>
-          <Navbar>
+          <Navbar inverse>
             <Navbar.Header>
               <Navbar.Brand>
                 <Link to="/">SUCP</Link>
