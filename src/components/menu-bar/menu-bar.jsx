@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {
+  Fa,
   Navbar,
   NavbarBrand,
   NavbarNav,
@@ -47,16 +48,18 @@ class Menu extends Component {
     });
   }
 
-  setNavItem(Path, pathname, name) {
+  setNavItem(Path, pathname, icon, name) {
     return pathname === Path ? (
       <NavItem active>
         <NavLink to={Path} onClick={() => this.onClickMenu(Path)}>
+          <Fa icon={icon} />
           {name}
         </NavLink>
       </NavItem>
     ) : (
       <NavItem>
         <NavLink to={Path} onClick={() => this.onClickMenu(Path)}>
+          <Fa icon={icon} />
           {name}
         </NavLink>
       </NavItem>
@@ -67,20 +70,31 @@ class Menu extends Component {
     return (
       <div>
         <Navbar color="blue" dark expand="md" fixed="top">
-          <NavbarBrand href="/">
+          <NavbarBrand href="#" onClick={() => this.onClickMenu(HomePath)}>
             <strong>SUCP</strong>
           </NavbarBrand>
           {!this.state.isWideEnough && <NavbarToggler onClick={this.onClick} />}
           <Collapse isOpen={this.state.collapse} navbar>
             <NavbarNav left>
-              {this.setNavItem(HomePath, this.state.pathname, "ホーム")}
-              {this.setNavItem(IllustPath, this.state.pathname, "イラスト")}
+              {this.setNavItem(HomePath, this.state.pathname, "home", "ホーム")}
+              {this.setNavItem(
+                IllustPath,
+                this.state.pathname,
+                "picture-o",
+                "イラスト"
+              )}
               {this.setNavItem(
                 GuidelinesPath,
                 this.state.pathname,
+                "book",
                 "ガイドライン"
               )}
-              {this.setNavItem(ContactPath, this.state.pathname, "お問合わせ")}
+              {this.setNavItem(
+                ContactPath,
+                this.state.pathname,
+                "envelope",
+                "お問合わせ"
+              )}
             </NavbarNav>
           </Collapse>
         </Navbar>
