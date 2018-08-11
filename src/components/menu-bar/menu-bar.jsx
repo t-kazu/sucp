@@ -8,7 +8,7 @@ import {
   NavItem,
   NavLink
 } from "mdbreact";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 
 import TopScreen from "../../containers/top.jsx";
 import IllustScreen from "../..//containers/illust.jsx";
@@ -20,13 +20,15 @@ const IllustPath = "/illust";
 const GuidelinesPath = "/guidelines";
 const ContactPath = "/contact";
 
+const MenuComponent = withRouter(props => <Menu {...props} />);
+
 class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
       collapse: false,
       isWideEnough: false,
-      pathname: HomePath
+      pathname: this.props.location.pathname
     };
     this.onClick = this.onClick.bind(this);
     this.onClickMenu = this.onClickMenu.bind(this);
@@ -63,42 +65,34 @@ class Menu extends Component {
 
   render() {
     return (
-      <Router>
-        <div>
-          <Navbar color="blue" dark expand="md" fixed="top">
-            <NavbarBrand href="/">
-              <strong>SUCP</strong>
-            </NavbarBrand>
-            {!this.state.isWideEnough && (
-              <NavbarToggler onClick={this.onClick} />
-            )}
-            <Collapse isOpen={this.state.collapse} navbar>
-              <NavbarNav left>
-                {this.setNavItem(HomePath, this.state.pathname, "ホーム")}
-                {this.setNavItem(IllustPath, this.state.pathname, "イラスト")}
-                {this.setNavItem(
-                  GuidelinesPath,
-                  this.state.pathname,
-                  "ガイドライン"
-                )}
-                {this.setNavItem(
-                  ContactPath,
-                  this.state.pathname,
-                  "お問合わせ"
-                )}
-              </NavbarNav>
-            </Collapse>
-          </Navbar>
-          <Switch>
-            <Route exact path={HomePath} component={TopScreen} />
-            <Route path={IllustPath} component={IllustScreen} />
-            <Route path={GuidelinesPath} component={GuidelinesScreen} />
-            <Route path={ContactPath} component={ContactScreen} />
-          </Switch>
-        </div>
-      </Router>
+      <div>
+        <Navbar color="blue" dark expand="md" fixed="top">
+          <NavbarBrand href="/">
+            <strong>SUCP</strong>
+          </NavbarBrand>
+          {!this.state.isWideEnough && <NavbarToggler onClick={this.onClick} />}
+          <Collapse isOpen={this.state.collapse} navbar>
+            <NavbarNav left>
+              {this.setNavItem(HomePath, this.state.pathname, "ホーム")}
+              {this.setNavItem(IllustPath, this.state.pathname, "イラスト")}
+              {this.setNavItem(
+                GuidelinesPath,
+                this.state.pathname,
+                "ガイドライン"
+              )}
+              {this.setNavItem(ContactPath, this.state.pathname, "お問合わせ")}
+            </NavbarNav>
+          </Collapse>
+        </Navbar>
+        <Switch>
+          <Route exact path={HomePath} component={TopScreen} />
+          <Route path={IllustPath} component={IllustScreen} />
+          <Route path={GuidelinesPath} component={GuidelinesScreen} />
+          <Route path={ContactPath} component={ContactScreen} />
+        </Switch>
+      </div>
     );
   }
 }
 
-export default Menu;
+export default MenuComponent;
