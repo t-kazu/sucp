@@ -12,12 +12,12 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import TopScreen from "../../containers/top.jsx";
 import IllustScreen from "../..//containers/illust.jsx";
-import LicenseScreen from "../../containers/license.jsx";
+import GuidelinesScreen from "../../containers/guidelines.jsx";
 import ContactScreen from "../../containers/contact.jsx";
 
 const HomePath = "/";
 const IllustPath = "/illust";
-const LicensePath = "/license";
+const GuidelinesPath = "/guidelines";
 const ContactPath = "/contact";
 
 class Menu extends Component {
@@ -77,9 +77,9 @@ class Menu extends Component {
                 {this.setNavItem(HomePath, this.state.pathname, "ホーム")}
                 {this.setNavItem(IllustPath, this.state.pathname, "イラスト")}
                 {this.setNavItem(
-                  LicensePath,
+                  GuidelinesPath,
                   this.state.pathname,
-                  "ライセンス"
+                  "ガイドライン"
                 )}
                 {this.setNavItem(
                   ContactPath,
@@ -90,10 +90,10 @@ class Menu extends Component {
             </Collapse>
           </Navbar>
           <Switch>
-            <Route exact path="/" component={TopScreen} />
-            <Route path="/illust" component={IllustScreen} />
-            <Route path="/license" component={LicenseScreen} />
-            <Route path="/contact" component={ContactScreen} />
+            <Route exact path={HomePath} component={TopScreen} />
+            <Route path={IllustPath} component={IllustScreen} />
+            <Route path={GuidelinesPath} component={GuidelinesScreen} />
+            <Route path={ContactPath} component={ContactScreen} />
           </Switch>
         </div>
       </Router>
