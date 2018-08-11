@@ -16,6 +16,8 @@ import IllustScreen from "../..//containers/illust.jsx";
 import GuidelinesScreen from "../../containers/guidelines.jsx";
 import ContactScreen from "../../containers/contact.jsx";
 
+import "./menu-bar.css";
+
 const HomePath = "/";
 const IllustPath = "/illust";
 const GuidelinesPath = "/guidelines";
@@ -69,34 +71,49 @@ class Menu extends Component {
   render() {
     return (
       <div>
-        <Navbar color="blue" dark expand="md" fixed="top">
-          <NavbarBrand href="#" onClick={() => this.onClickMenu(HomePath)}>
-            <strong>SUCP</strong>
-          </NavbarBrand>
-          {!this.state.isWideEnough && <NavbarToggler onClick={this.onClick} />}
-          <Collapse isOpen={this.state.collapse} navbar>
-            <NavbarNav left>
-              {this.setNavItem(HomePath, this.state.pathname, "home", "ホーム")}
-              {this.setNavItem(
-                IllustPath,
-                this.state.pathname,
-                "picture-o",
-                "イラスト"
-              )}
-              {this.setNavItem(
-                GuidelinesPath,
-                this.state.pathname,
-                "book",
-                "ガイドライン"
-              )}
-              {this.setNavItem(
-                ContactPath,
-                this.state.pathname,
-                "envelope",
-                "お問合わせ"
-              )}
-            </NavbarNav>
-          </Collapse>
+        <Navbar
+          dark
+          expand="lg"
+          fixed="top"
+          scrolling
+          className={`${this.state.pathname === HomePath ? "" : "blue"}`}
+        >
+          <div className="container">
+            <NavbarBrand href="#" onClick={() => this.onClickMenu(HomePath)}>
+              <strong>SUCP</strong>
+            </NavbarBrand>
+            {!this.state.isWideEnough && (
+              <NavbarToggler onClick={this.onClick} />
+            )}
+            <Collapse isOpen={this.state.collapse} navbar>
+              <NavbarNav right>
+                {this.setNavItem(
+                  HomePath,
+                  this.state.pathname,
+                  "home",
+                  "ホーム"
+                )}
+                {this.setNavItem(
+                  IllustPath,
+                  this.state.pathname,
+                  "picture-o",
+                  "イラスト"
+                )}
+                {this.setNavItem(
+                  GuidelinesPath,
+                  this.state.pathname,
+                  "book",
+                  "ガイドライン"
+                )}
+                {this.setNavItem(
+                  ContactPath,
+                  this.state.pathname,
+                  "envelope",
+                  "お問合わせ"
+                )}
+              </NavbarNav>
+            </Collapse>
+          </div>
         </Navbar>
         <Switch>
           <Route exact path={HomePath} component={TopScreen} />

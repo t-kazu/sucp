@@ -1,0 +1,8 @@
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.0rem;
+    padding-left: 1.0rem;
+}
+
+.navbar.scrolling-navbar.top-nav-collapse {
+    background-color: #2196f3!important;
+}
