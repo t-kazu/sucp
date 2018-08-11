@@ -72,12 +72,11 @@ class Menu extends Component {
     return (
       <div>
         <Navbar
-          color="blue"
           dark
           expand="lg"
           fixed="top"
           scrolling
-          className="sticky-top"
+          className={`${this.state.pathname === HomePath ? "" : "blue"}`}
         >
           <div className="container">
             <NavbarBrand href="#" onClick={() => this.onClickMenu(HomePath)}>
