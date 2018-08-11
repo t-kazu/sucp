@@ -15,21 +15,50 @@ import IllustScreen from "../..//containers/illust.jsx";
 import LicenseScreen from "../../containers/license.jsx";
 import ContactScreen from "../../containers/contact.jsx";
 
+const HomePath = "/";
+const IllustPath = "/illust";
+const LicensePath = "/license";
+const ContactPath = "/contact";
+
 class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
       collapse: false,
       isWideEnough: false,
-      dropdownOpen: false
+      pathname: HomePath
     };
     this.onClick = this.onClick.bind(this);
+    this.onClickMenu = this.onClickMenu.bind(this);
   }
 
   onClick() {
     this.setState({
       collapse: !this.state.collapse
     });
+  }
+
+  onClickMenu(nextPath) {
+    this.setState({
+      collapse: false,
+      pathname: nextPath
+    });
+  }
+
+  setNavItem(Path, pathname, name) {
+    return pathname === Path ? (
+      <NavItem active>
+        <NavLink to={Path} onClick={() => this.onClickMenu(Path)}>
+          {name}
+        </NavLink>
+      </NavItem>
+    ) : (
+      <NavItem>
+        <NavLink to={Path} onClick={() => this.onClickMenu(Path)}>
+          {name}
+        </NavLink>
+      </NavItem>
+    );
   }
 
   render() {
@@ -45,18 +74,18 @@ class Menu extends Component {
             )}
             <Collapse isOpen={this.state.collapse} navbar>
               <NavbarNav left>
-                <NavItem active>
-                  <NavLink to="/">ホーム</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/illust">イラスト</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/license">ライセンス</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/contact">お問合わせ</NavLink>
-                </NavItem>
+                {this.setNavItem(HomePath, this.state.pathname, "ホーム")}
+                {this.setNavItem(IllustPath, this.state.pathname, "イラスト")}
+                {this.setNavItem(
+                  LicensePath,
+                  this.state.pathname,
+                  "ライセンス"
+                )}
+                {this.setNavItem(
+                  ContactPath,
+                  this.state.pathname,
+                  "お問合わせ"
+                )}
               </NavbarNav>
             </Collapse>
           </Navbar>
