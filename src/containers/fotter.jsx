@@ -9,8 +9,7 @@ class FooterPage extends React.Component {
           <Container fluid>
             &copy; {new Date().getFullYear()} Copyright:
             <a href="https://shimane-u-characters.com">
-              {" "}
-              島根大学非公認キャラ sucp{" "}
+              島根大学非公認キャラ sucp
             </a>
           </Container>
         </div>
