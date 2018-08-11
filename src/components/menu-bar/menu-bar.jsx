@@ -69,7 +69,7 @@ class Menu extends Component {
   render() {
     return (
       <div>
-        <Navbar color="blue" dark expand="md" fixed="top">
+        <Navbar color="blue" dark expand="lg" fixed="top" scrolling>
           <NavbarBrand href="#" onClick={() => this.onClickMenu(HomePath)}>
             <strong>SUCP</strong>
           </NavbarBrand>
