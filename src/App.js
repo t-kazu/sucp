@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Router>
+        <Router hashType="hashbang">
           <Menu />
         </Router>
         <Footer />
