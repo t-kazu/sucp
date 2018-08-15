@@ -6,7 +6,7 @@ import Concept from "../components/top/concept.jsx";
 class TopScreen extends Component {
   render() {
     return (
-      <div>
+      <div className="main-padding-menu">
         <MainVisual />
         <Concept />
       </div>

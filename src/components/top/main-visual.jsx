@@ -30,7 +30,7 @@ class MainVisual extends Component {
                   </h6>
                 </div>
                 <Col md="6" xl="5" className="mt-xl-5">
-                  <img src={charcterImg} className="img-fluid" />
+                  <img src={charcterImg} className="img-fluid" alt="TopImage" />
                 </Col>
               </Row>
             </Container>
