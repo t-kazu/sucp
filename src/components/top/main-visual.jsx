@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Mask, Row, Col, View, Container } from "mdbreact";
 
-import topImage from "./sample.jpg";
+import charcterImg from "./secret.png";
 import "./main-visual.css";
 
 class MainVisual extends Component {
@@ -30,7 +30,7 @@ class MainVisual extends Component {
                   </h6>
                 </div>
                 <Col md="6" xl="5" className="mt-xl-5">
-                  {/* <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png" className="img-fluid"/> */}
+                  <img src={charcterImg} className="img-fluid" />
                 </Col>
               </Row>
             </Container>
