@@ -1,19 +1,13 @@
-h1 {
-    font-family: ‘Noto Sans JP’, Arial, serif;
-    font-weight: bold;
-    font-size: 1.0vw;
+.illust-title {
+  font-family: ‘Noto Sans JP’, Arial, serif;
+}
+
+
+img {
+  height: 150px;
+  width: auto;
 }
 
 a.disabled {
-    pointer-events: none;
-    color: #222;
-    font-size: 0.8vw;
-}
-
-.illust-div {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: 1.5vw;
-    margin-left: 1.5vw;
+  color: #222;
 }

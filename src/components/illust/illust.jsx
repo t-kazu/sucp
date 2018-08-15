@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Fa, Card, CardBody, CardTitle, CardText } from "mdbreact";
 
 import "./illust.css";
 
@@ -7,16 +8,35 @@ const illustBasePath = `${process.env.PUBLIC_URL}` + "/characters/";
 class Illust extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      filePath: illustBasePath + this.props.character.filePath
+    };
   }
 
   render() {
     return (
-      <div className="illust-div col-xs-6 col-md-3">
-        <img src={illustBasePath + this.props.character.filePath} />
-        <h1>{this.props.character.name}</h1>
-        <a href="/" class="disabled" tabindex="-1">
-          {this.props.character.creator}
-        </a>
+      <div>
+        <Card style={{ width: "20rem", margin: "1rem" }}>
+          <CardBody>
+            <CardTitle tag="h5" className="illust-title">
+              {this.props.character.name}
+            </CardTitle>
+            <CardTitle tag="h6" sub className="mb-2 text-muted illust-title">
+              <a href="/" class="disabled" tabindex="-1">
+                {this.props.character.creator}
+              </a>
+            </CardTitle>
+            <CardText>
+              <a href={this.state.filePath}>
+                <img src={this.state.filePath} />
+              </a>
+            </CardText>
+            <a href={this.state.filePath} className="card-link" download>
+              <Fa icon="download" />
+              ダウンロード
+            </a>
+          </CardBody>
+        </Card>
       </div>
     );
   }
