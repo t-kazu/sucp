@@ -1,3 +1,10 @@
 .padding-menu {
     padding-top: 70px;
 }
+
+
+@media (max-width: 768px) {
+  .main-padding-menu {
+     padding-top: 50px;
+  }
+}
