@@ -27,11 +27,11 @@ class Illust extends Component {
               </a>
             </CardTitle>
             <CardText>
-              <a href={this.state.filePath}>
-                <img src={this.state.filePath} />
+              <a href={this.props.character.img}>
+                <img src={this.props.character.img} />
               </a>
             </CardText>
-            <a href={this.state.filePath} className="card-link" download>
+            <a href={this.props.character.img} className="card-link" download>
               <Fa icon="download" />
               ダウンロード
             </a>
