@@ -14,7 +14,6 @@ class Illust extends Component {
   }
 
   render() {
-    console.log(this.props.character.img.split("/").pop());
     return (
       <div>
         <Card style={{ width: "20rem", margin: "1rem" }}>
