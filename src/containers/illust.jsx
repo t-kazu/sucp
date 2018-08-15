@@ -8,6 +8,7 @@ class IllustScreen extends Component {
   render() {
     return (
       <div className="padding-menu container">
+        <h2>キャラクターは近日公開予定です。</h2>
         <div className="row">
           {characterData.map(character => {
             return <Illust character={character} />;
