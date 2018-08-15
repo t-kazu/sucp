@@ -3,13 +3,13 @@ import { Fa, Card, CardBody, CardTitle, CardText } from "mdbreact";
 
 import "./illust.css";
 
-const illustBasePath = `${process.env.PUBLIC_URL}` + "/characters/";
+const basePath = "/static/media/";
 
 class Illust extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      filePath: illustBasePath + this.props.character.filePath
+      imgPath: basePath + this.props.character.img.split("/").pop()
     };
   }
 
@@ -27,7 +27,7 @@ class Illust extends Component {
               </a>
             </CardTitle>
             <CardText>
-              <a href={this.props.character.img}>
+              <a href={this.state.imgPath}>
                 <img
                   src={this.props.character.img}
                   alt={this.props.character.name}
@@ -35,7 +35,7 @@ class Illust extends Component {
               </a>
             </CardText>
             <a
-              href={this.props.character.img}
+              href={this.state.imgPath}
               className="card-link"
               download={this.props.character.filePath}
             >
