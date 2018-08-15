@@ -1,4 +1,33 @@
-img {
-    width: 100%;
-    height: auto;
+#apppage .gradient {
+  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+}
+
+@media (min-width: 768px) {
+  #apppage .view {
+    background-image: url('./sample.jpg'); /*PC用画像*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  #apppage .view {
+    background-image: url('./sample.jpg'); /*スマホ用画像*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 170vh;
+  }
+}
+
+#apppage h6 {
+  line-height: 1.7;
+}
+
+#apppage a {
+  font-weight: bolder;
+  color: inherit;
 }
