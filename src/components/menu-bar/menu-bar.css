@@ -6,3 +6,9 @@
 .navbar.scrolling-navbar.top-nav-collapse {
     background-color: #2196f3!important;
 }
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+      background-color: #2196f3 !important;
+  }
+}
