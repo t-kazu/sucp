@@ -25,7 +25,7 @@ class MainVisual extends Component {
                     <a href="http://gakushien.shimane-u.ac.jp/projectS/">
                       学生プロジェクトS
                     </a>
-                    】にて採択されたプロジェクトです。
+                    】に採択されたプロジェクトです。
                     自主的活動であるため、島根大学ではなく学生主体のプロジェクトです。
                   </h6>
                 </div>
