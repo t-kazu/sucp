@@ -26,22 +26,24 @@ class Illust extends Component {
                 {this.props.character.creator}
               </a>
             </CardTitle>
-            <CardText>
-              <a href={this.state.imgPath}>
-                <img
-                  src={this.props.character.img}
-                  alt={this.props.character.name}
-                />
+            <div align="center">
+              <CardText>
+                <a href={this.state.imgPath}>
+                  <img
+                    src={this.props.character.img}
+                    alt={this.props.character.name}
+                  />
+                </a>
+              </CardText>
+              <a
+                href={this.state.imgPath}
+                className="card-link"
+                download={this.props.character.filePath}
+              >
+                <Fa icon="download" />
+                ダウンロード
               </a>
-            </CardText>
-            <a
-              href={this.state.imgPath}
-              className="card-link"
-              download={this.props.character.filePath}
-            >
-              <Fa icon="download" />
-              ダウンロード
-            </a>
+            </div>
           </CardBody>
         </Card>
       </div>
