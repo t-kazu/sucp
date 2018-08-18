@@ -26,15 +26,15 @@ class Illust extends Component {
                 {this.props.character.creator}
               </a>
             </CardTitle>
-            <CardText className="center">
-              <a href={this.state.imgPath}>
-                <img
-                  src={this.props.character.img}
-                  alt={this.props.character.name}
-                />
-              </a>
-            </CardText>
             <div align="center">
+              <CardText>
+                <a href={this.state.imgPath}>
+                  <img
+                    src={this.props.character.img}
+                    alt={this.props.character.name}
+                  />
+                </a>
+              </CardText>
               <a
                 href={this.state.imgPath}
                 className="card-link"
