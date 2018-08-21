@@ -30,7 +30,7 @@ class MainVisual extends Component {
                   </h6>
                 </div>
                 <Col md="6" xl="5" className="mt-xl-5">
-                  <Animation type="bounce">
+                  <Animation type="slideInDown">
                     <img
                       src={charcterImg}
                       className="img-fluid"
