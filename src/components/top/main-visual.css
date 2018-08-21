@@ -6,7 +6,7 @@
 
 @media (min-width: 768px) {
   #apppage .view {
-    background-image: url('./sample.jpg'); /*PC用画像*/
+    background-image: url('./top-image-pc.jpg'); /*PC用画像*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -15,7 +15,7 @@
 }
 @media (max-width: 768px) {
   #apppage .view {
-    background-image: url('./sample.jpg'); /*スマホ用画像*/
+    background-image: url('./top-image-sp.jpg'); /*スマホ用画像*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
