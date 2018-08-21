@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Mask, Row, Col, View, Container } from "mdbreact";
+import { Mask, Row, Col, View, Container, Animation } from "mdbreact";
 
 import charcterImg from "./secret.png";
 import "./main-visual.css";
@@ -30,7 +30,13 @@ class MainVisual extends Component {
                   </h6>
                 </div>
                 <Col md="6" xl="5" className="mt-xl-5">
-                  <img src={charcterImg} className="img-fluid" alt="TopImage" />
+                  <Animation type="bounce" infinite>
+                    <img
+                      src={charcterImg}
+                      className="img-fluid"
+                      alt="TopImage"
+                    />
+                  </Animation>
                 </Col>
               </Row>
             </Container>
