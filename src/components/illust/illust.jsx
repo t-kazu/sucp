@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Fa, Card, CardBody, CardTitle, CardText } from "mdbreact";
+import { Fa, Card, CardBody, CardTitle, CardText, Button } from "mdbreact";
 
 import "./illust.css";
 
@@ -20,11 +20,20 @@ class Illust extends Component {
           <CardBody>
             <CardTitle tag="h5" className="illust-title">
               {this.props.character.name}
+              <Button color="info" disabled size="sm" className="button-left">
+                {this.props.character.option}
+              </Button>
             </CardTitle>
             <CardTitle tag="h6" sub className="mb-2 text-muted illust-title">
-              <a href="/" class="disabled" tabindex="-1">
-                {this.props.character.creator}
-              </a>
+              {!this.props.character.creator_url ? (
+                <a href="/" class="disabled" tabindex="-1">
+                  {this.props.character.creator}
+                </a>
+              ) : (
+                <a href={this.props.character.creator_url} tabindex="-1">
+                  {this.props.character.creator}
+                </a>
+              )}
             </CardTitle>
             <div align="center">
               <CardText>
