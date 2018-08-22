@@ -6,7 +6,6 @@ const illustList = [
     filePath: "secret.png",
     name: "シークレット",
     creator: "島大太郎",
-    creator_url: "#",
     option: "オリジナル"
   },
   {
@@ -14,7 +13,6 @@ const illustList = [
     filePath: "secret.png",
     name: "シークレット",
     creator: "島大太郎",
-    creator_url: null,
     option: "二次創作"
   },
   {
@@ -22,7 +20,6 @@ const illustList = [
     filePath: "secret.png",
     name: "シークレット",
     creator: "島大太郎",
-    creator_url: null,
     option: "二次創作"
   },
   {
@@ -30,7 +27,6 @@ const illustList = [
     filePath: "secret.png",
     name: "シークレット",
     creator: "島大太郎",
-    creator_url: null,
     option: "二次創作"
   }
 ];
