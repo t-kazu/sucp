@@ -2,6 +2,10 @@
   font-family: ‘Noto Sans JP’, Arial, serif;
 }
 
+.button-left {
+  float: right;
+}
+
 img {
   height: 150px;
   width: auto;
