@@ -25,15 +25,9 @@ class Illust extends Component {
               </Button>
             </CardTitle>
             <CardTitle tag="h6" sub className="mb-2 text-muted illust-title">
-              {!this.props.character.creator_url ? (
-                <a href="/" class="disabled" tabindex="-1">
-                  {this.props.character.creator}
-                </a>
-              ) : (
-                <a href={this.props.character.creator_url} tabindex="-1">
-                  {this.props.character.creator}
-                </a>
-              )}
+              <a href="/" class="disabled" tabindex="-1">
+                {this.props.character.creator}
+              </a>
             </CardTitle>
             <div align="center">
               <CardText>
