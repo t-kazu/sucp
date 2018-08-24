@@ -4,7 +4,7 @@
   "homepage": "https://t-kazu.github.io/sucp/",
   "private": true,
   "dependencies": {
-    "mdbreact": "^4.6.1",
+    "mdbreact": "^4.7.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
