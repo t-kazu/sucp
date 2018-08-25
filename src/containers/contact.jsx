@@ -17,96 +17,16 @@ import {
 } from "mdbreact";
 
 import "./share.css";
+import "./contact.css";
 
 class ContactScreen extends Component {
-  constructor(props) {
-    super(props),
-      (this.state = {
-        collapse: false
-      });
-    this.onClick = this.onClick.bind(this);
-    this.handleNavbarClick = this.handleNavbarClick.bind(this);
-  }
-
-  onClick() {
-    this.setState({
-      collapse: !this.state.collapse
-    });
-  }
-
-  handleNavbarClick() {
-    this.setState({
-      collapse: false
-    });
-  }
   render() {
-    const overlay = (
-      <div
-        id="sidenav-overlay"
-        style={{ backgroundColor: "transparent" }}
-        onClick={this.handleNavbarClick}
-      />
-    );
     return (
       <div className="padding-menu">
         <Button href="mailto:kaza9322@gmail.com?subject=島根大学非公認キャラSUCPへの問合わせ">
           <Fa icon="envelope" /> メールはこちらへ
         </Button>
         <div id="videobackground">
-          <div>
-            <Navbar dark expand="md" fixed="top" scrolling>
-              <Container>
-                <NavbarBrand>
-                  <span className="white-text">Navbar</span>
-                </NavbarBrand>
-                <NavbarToggler onClick={this.onClick} />
-                <Collapse isOpen={this.state.collapse} navbar>
-                  <NavbarNav left>
-                    <NavItem>
-                      <NavLink to="#!">Home</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink to="#!">About</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink to="#!">Features</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink to="#!">Services</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink to="#!">Opinions</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink to="#!">Team</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink to="#!">Contact</NavLink>
-                    </NavItem>
-                  </NavbarNav>
-                  <NavbarNav right>
-                    <NavItem>
-                      <NavLink to="!#">
-                        <Fa icon="facebook" />
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink to="!#">
-                        <Fa icon="twitter" />
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink to="!#">
-                        <Fa icon="instagram" />
-                      </NavLink>
-                    </NavItem>
-                  </NavbarNav>
-                </Collapse>
-              </Container>
-            </Navbar>
-            {this.state.collapse && overlay}
-          </div>
-
           <View>
             <video
               className="video-intro"
@@ -141,23 +61,6 @@ class ContactScreen extends Component {
               </Container>
             </Mask>
           </View>
-
-          <Container>
-            <Row className="pt-5 pb-4">
-              <Col md="12" className="text-center">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </p>
-              </Col>
-            </Row>
-          </Container>
         </div>
       </div>
     );
