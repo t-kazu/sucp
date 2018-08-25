@@ -1,6 +1,10 @@
-div #concept {
-  width: 100%;
+#concept {
   background-image: url('./sample.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding: 10vw;
+  /* background-repeat: no-repeat */
 
 }
 
@@ -12,4 +16,24 @@ CardBody {
   background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
   background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
   background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+}
+
+p {
+  font-size: 1.5vw;
+  border: solid 1px white;
+  padding: 2vw;
+}
+
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.br::before {
+  content: "\A";
+  white-space: pre;
+}
+
+#concept .container {
+  padding: 10vw;
 }
