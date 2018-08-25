@@ -1,20 +1,5 @@
 import React, { Component } from "react";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarNav,
-  NavItem,
-  NavLink,
-  NavbarToggler,
-  Collapse,
-  Mask,
-  Row,
-  Col,
-  Fa,
-  Button,
-  View,
-  Container
-} from "mdbreact";
+import { Mask, Row, Col, Fa, Button, View, Container } from "mdbreact";
 
 import "./share.css";
 import "./contact.css";
