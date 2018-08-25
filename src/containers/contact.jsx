@@ -17,12 +17,7 @@ class ContactScreen extends Component {
               autoPlay
               muted=""
               loop
-            >
-              {/*<source
-                src="https://mdbootstrap.com/img/video/animation.mp4"
-                type="video/mp4"
-              />*/}
-            </video>
+            />
             <Mask className="d-flex justify-content-center align-items-center gradient">
               <Container className="px-md-3 px-sm-0">
                 <Row>
