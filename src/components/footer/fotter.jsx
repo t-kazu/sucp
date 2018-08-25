@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Footer } from "mdbreact";
 
+import "./fotter.css";
+
 class FooterPage extends React.Component {
   render() {
     return (

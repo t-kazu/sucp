@@ -22,10 +22,7 @@ import "./contact.css";
 class ContactScreen extends Component {
   render() {
     return (
-      <div className="padding-menu">
-        <Button href="mailto:kaza9322@gmail.com?subject=島根大学非公認キャラSUCPへの問合わせ">
-          <Fa icon="envelope" /> メールはこちらへ
-        </Button>
+      <div className="padding-menu-contact">
         <div id="videobackground">
           <View>
             <video
@@ -36,25 +33,28 @@ class ContactScreen extends Component {
               muted=""
               loop
             >
-              <source
+              {/*<source
                 src="https://mdbootstrap.com/img/video/animation.mp4"
                 type="video/mp4"
-              />
+              />*/}
             </video>
             <Mask className="d-flex justify-content-center align-items-center gradient">
               <Container className="px-md-3 px-sm-0">
                 <Row>
                   <Col md="12" className="mb-4 white-text text-center">
-                    <h3 className="display-3 font-weight-bold mb-0 pt-md-5">
-                      Creative Agency{" "}
+                    <h3 className="display-contact font-weight-bold mb-0 pt-md-5">
+                      Contact us{" "}
                     </h3>
                     <hr className="hr-light my-4 w-75" />
-                    <h4 className="subtext-header mt-2 mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                      deleniti consequuntur nihil.
-                    </h4>
-                    <Button outline rounded color="white">
-                      <Fa icon="home" /> Visit us
+                    <h5 className="subtext-header mt-2 mb-4">
+                      お便りお待ちしております。
+                    </h5>
+                    <Button
+                      outline
+                      color="white"
+                      href="mailto:kaza9322@gmail.com?subject=島根大学非公認キャラSUCPへの問合わせ"
+                    >
+                      <Fa icon="envelope" /> メールはこちらへ
                     </Button>
                   </Col>
                 </Row>

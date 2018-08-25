@@ -2,6 +2,11 @@
     padding-top: 70px;
 }
 
+.padding-menu-contact {
+    padding-top: 55px;
+}
+
+
 
 @media (max-width: 768px) {
   .main-padding-menu {
