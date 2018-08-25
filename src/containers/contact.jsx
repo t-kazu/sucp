@@ -10,13 +10,10 @@ class ContactScreen extends Component {
       <div className="padding-menu-contact">
         <div id="videobackground">
           <View>
-            <video
-              className="video-intro"
-              poster="https://mdbootstrap.com/img/Photos/Others/background.jpg"
-              playsInline
-              autoPlay
-              muted=""
-              loop
+            <img
+              src="https://mdbootstrap.com/img/Photos/Others/background.jpg"
+              className="img-fluid"
+              alt="TopImage"
             />
             <Mask className="d-flex justify-content-center align-items-center gradient">
               <Container className="px-md-3 px-sm-0">
