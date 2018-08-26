@@ -49,7 +49,7 @@ class Concept extends Component {
                 />
                 <Animation reveal type="fadeInUp" duration="1s" delay="0.6s">
                   <p className="text-center align-middle concept-margin">
-                    大学達がキャラを
+                    学生達がキャラを
                     <span class="br">生み出せる環境づくり</span>
                   </p>
                 </Animation>
