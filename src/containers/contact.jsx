@@ -24,7 +24,7 @@ class ContactScreen extends Component {
                     </h3>
                     <hr className="hr-light my-4 w-75" />
                     <h5 className="subtext-header mt-2 mb-4">
-                      お便りお待ちしております。
+                      ご相談お待ちしております。
                     </h5>
                     <Button
                       outline
