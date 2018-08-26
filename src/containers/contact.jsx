@@ -4,6 +4,8 @@ import { Mask, Row, Col, Fa, Button, View, Container } from "mdbreact";
 import "./share.css";
 import "./contact.css";
 
+import contactImg from "./contact.png";
+
 class ContactScreen extends Component {
   render() {
     return (
@@ -11,8 +13,8 @@ class ContactScreen extends Component {
         <div id="videobackground">
           <View>
             <img
-              src="https://mdbootstrap.com/img/Photos/Others/background.jpg"
-              className="img-fluid"
+              src={contactImg}
+              className="img-fluid size-contact"
               alt="TopImage"
             />
             <Mask className="d-flex justify-content-center align-items-center gradient">
