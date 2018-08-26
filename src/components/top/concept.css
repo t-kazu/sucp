@@ -1,17 +1,40 @@
-.concept-gradient {
-  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  height: 100vh;
+@media (min-width: 768px) {
+  .concept-view {
+    background-image: url('./concept_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+  }
+  
+  .concept-gradient {
+    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    height: 100vh;
+  }
 }
 
-.concept-view {
-  background-image: url('./concept_bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  height: 100vh;
+@media (max-width: 768px) {
+  
+  .concept-view {
+    background-image: url('./concept_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 50vh;
+  }
 
+  .concept-gradient {
+    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    height: 50vh;
+  }
+}
+
+.concept-margin {
+  margin-top: 2vw;
 }
 
 p {
