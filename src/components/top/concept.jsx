@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { View, Mask, Animation } from "mdbreact";
-import icon01 from "./icon01_light.svg";
+import { Animation } from "mdbreact";
+import icon01 from "./icon01_light2.svg";
 import icon02 from "./icon02_light.svg";
 import icon03 from "./icon03_light.svg";
 
