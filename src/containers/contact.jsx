@@ -33,7 +33,7 @@ class ContactScreen extends Component {
                       color="white"
                       href="mailto:kaza9322@gmail.com?subject=島根大学非公認キャラSUCPへの問合わせ"
                     >
-                      <Fa icon="envelope" /> メールはこちらへ
+                      <Fa icon="envelope" /> メールはこちらから
                     </Button>
                   </Col>
                 </Row>
