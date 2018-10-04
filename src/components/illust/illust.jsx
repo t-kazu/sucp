@@ -25,7 +25,7 @@ class Illust extends Component {
               </Button>
             </CardTitle>
             <CardTitle tag="h6" sub className="mb-2 text-muted illust-title">
-              {this.props.character.creator}
+              by {this.props.character.creator}
             </CardTitle>
             <div align="center">
               <CardText>
@@ -37,12 +37,11 @@ class Illust extends Component {
                 </a>
               </CardText>
               <a
-                href={this.state.imgPath}
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_lOliJmhuyoI49oADYfOv0BJimFhSgj6UKXDD4s9G5MP4Ug/viewform"
                 className="card-link"
-                download={this.props.character.filePath}
               >
-                <Fa icon="download" />
-                ダウンロード
+                <Fa icon="pencil-square-o" />
+                キャラ名募集のアンケート実施中
               </a>
             </div>
           </CardBody>
