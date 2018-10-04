@@ -5,7 +5,7 @@ const illustList = [
     img: image1,
     filePath: "image1.png",
     name: "キャラ名募集中",
-    creator: "小芽のい",
+    creator: "木芽のい",
     option: "オリジナル"
   }
 ];
