@@ -25,7 +25,7 @@ class Illust extends Component {
               </Button>
             </CardTitle>
             <CardTitle tag="h6" sub className="mb-2 text-muted illust-title">
-              by {this.props.character.creator}
+              Illust by {this.props.character.creator}
             </CardTitle>
             <div align="center">
               <CardText>
