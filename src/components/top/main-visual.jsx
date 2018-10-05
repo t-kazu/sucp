@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Mask, Row, Col, View, Container, Animation } from "mdbreact";
 
-import charcterImg from "./secret.png";
+import charcterImg from "../illust/characters/image1.png";
 import "./main-visual.css";
 
 class MainVisual extends Component {

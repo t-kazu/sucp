@@ -1,33 +1,12 @@
-import secretImage from "./characters/secret.png";
+import image1 from "./characters/image1.png";
 
 const illustList = [
   {
-    img: secretImage,
-    filePath: "secret.png",
-    name: "シークレット",
-    creator: "島大太郎",
+    img: image1,
+    filePath: "image1.png",
+    name: "キャラ名募集中",
+    creator: "木芽のい",
     option: "オリジナル"
-  },
-  {
-    img: secretImage,
-    filePath: "secret.png",
-    name: "シークレット",
-    creator: "島大太郎",
-    option: "二次創作"
-  },
-  {
-    img: secretImage,
-    filePath: "secret.png",
-    name: "シークレット",
-    creator: "島大太郎",
-    option: "二次創作"
-  },
-  {
-    img: secretImage,
-    filePath: "secret.png",
-    name: "シークレット",
-    creator: "島大太郎",
-    option: "二次創作"
   }
 ];
 
