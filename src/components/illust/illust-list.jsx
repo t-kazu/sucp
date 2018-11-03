@@ -12,8 +12,8 @@ const illustList = [
   {
     img: image2,
     filePath: "image2.png",
-    name: "xxx",
-    creator: "",
+    name: "キャラ名募集中",
+    creator: "BirdMan",
     option: "２次創作"
   }
 ];
