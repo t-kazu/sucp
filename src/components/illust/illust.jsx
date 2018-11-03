@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Fa, Card, CardBody, CardTitle, CardText, Button } from "mdbreact";
+import { Card, CardBody, CardTitle, CardText, Button } from "mdbreact";
 
 import "./illust.css";
 
@@ -36,13 +36,6 @@ class Illust extends Component {
                   />
                 </a>
               </CardText>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSd_lOliJmhuyoI49oADYfOv0BJimFhSgj6UKXDD4s9G5MP4Ug/viewform"
-                className="card-link"
-              >
-                <Fa icon="pencil-square-o" />
-                キャラ名募集のアンケート実施中
-              </a>
             </div>
           </CardBody>
         </Card>
