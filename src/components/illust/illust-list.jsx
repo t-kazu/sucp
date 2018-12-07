@@ -6,21 +6,21 @@ const illustList = [
   {
     img: image1,
     filePath: "image1.png",
-    name: "キャラ名募集中",
+    name: "かんなびやえ",
     creator: "木芽のい",
     option: "オリジナル"
   },
   {
     img: image2,
     filePath: "image2.png",
-    name: "キャラ名募集中",
+    name: "かんなびやえ",
     creator: "BirdMan",
     option: "２次創作"
   },
   {
     img: image3,
     filePath: "image3.png",
-    name: "キャラ名募集中",
+    name: "かんなびやえ",
     creator: "BirdMan",
     option: "２次創作"
   }
