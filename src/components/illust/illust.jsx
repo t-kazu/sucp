@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, CardBody, CardTitle, CardText, Button } from "mdbreact";
+import { Fa, Card, CardBody, CardTitle, CardText, Button } from "mdbreact";
 
 import "./illust.css";
 
@@ -36,6 +36,13 @@ class Illust extends Component {
                   />
                 </a>
               </CardText>
+              <a
+                href={this.state.imgPath}
+                className="card-link"
+                download={this.props.character.filePath}
+              >
+                <Fa icon="download" /> ダウンロード
+              </a>
             </div>
           </CardBody>
         </Card>
