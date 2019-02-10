@@ -16,7 +16,7 @@ class GuidelinesScreen extends Component {
           />
         </a>
         <br />
-        この 作品 は{" "}
+        本サイトで公開しているキャラクター は全て{" "}
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
           クリエイティブ・コモンズ 表示 4.0 国際 ライセンス
         </a>
