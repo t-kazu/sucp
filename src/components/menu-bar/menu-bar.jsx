@@ -103,7 +103,7 @@ class Menu extends Component {
                   GuidelinesPath,
                   this.state.pathname,
                   "book",
-                  "ガイドライン"
+                  "ライセンス"
                 )}
                 {this.setNavItem(
                   ContactPath,
