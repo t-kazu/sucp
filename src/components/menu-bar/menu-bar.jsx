@@ -12,6 +12,7 @@ import {
 import { Route, Switch, withRouter } from "react-router-dom";
 
 import TopScreen from "../../containers/top.jsx";
+import IntroScreen from "../../containers/intro.jsx";
 import IllustScreen from "../..//containers/illust.jsx";
 import GuidelinesScreen from "../../containers/guidelines.jsx";
 import ContactScreen from "../../containers/contact.jsx";
@@ -19,6 +20,7 @@ import ContactScreen from "../../containers/contact.jsx";
 import "./menu-bar.css";
 
 const HomePath = "/";
+const IntroPath = "/intro";
 const IllustPath = "/illust";
 const GuidelinesPath = "/guidelines";
 const ContactPath = "/contact";
@@ -94,6 +96,12 @@ class Menu extends Component {
                   "ホーム"
                 )}
                 {this.setNavItem(
+                  IntroPath,
+                  this.state.pathname,
+                  "info",
+                  "キャラ紹介"
+                )}
+                {this.setNavItem(
                   IllustPath,
                   this.state.pathname,
                   "picture-o",
@@ -117,6 +125,7 @@ class Menu extends Component {
         </Navbar>
         <Switch>
           <Route exact path={HomePath} component={TopScreen} />
+          <Route path={IntroPath} component={IntroScreen} />
           <Route path={IllustPath} component={IllustScreen} />
           <Route path={GuidelinesPath} component={GuidelinesScreen} />
           <Route path={ContactPath} component={ContactScreen} />
