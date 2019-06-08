@@ -6,8 +6,7 @@ import {
   MDBCardBody,
   MDBMask,
   MDBIcon,
-  MDBView,
-  MDBBtn
+  MDBView
 } from "mdbreact";
 
 import illustList from "../components/illust/illust-list.jsx";
